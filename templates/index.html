@@ -1,0 +1,64 @@
+{%extends "template.html"%}
+{% block conteudo %}
+<main class="container">
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <div class="banner-conteudo">
+            <h2>Cuide do seu cabelo com produtos de qualidade profissional</h2>
+            <p>Ofertas exclusivas em escovas, pranchas, químicos e mais!</p>
+            <a href="#" class="btn-banner">Ver Produtos</a>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias">
+        <h2>Categorias</h2>
+        <div class="grade-categorias">
+            <div class="categoria">Químicos</div>
+            <div class="categoria">Escovas</div>
+            <div class="categoria">Secadores</div>
+            <div class="categoria">Pranchas</div>
+        </div>
+    </section>
+
+    <!-- Produtos em destaque -->
+    <section class="produtos">
+        <h2>Destaques</h2>
+        <div class="grade-produtos">
+            <div class="produto">
+                <img src="https://via.placeholder.com/200" alt="Produto 1">
+                <h3>Máscara Capilar</h3>
+                <p>R$ 49,90</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200" alt="Produto 2">
+                <h3>Secador Pro 3000</h3>
+                <p>R$ 199,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios">
+        <h2>Por que comprar conosco?</h2>
+        <ul>
+            <li>✅ Produtos profissionais e originais</li>
+            <li>✅ Frete grátis acima de R$ 150</li>
+            <li>✅ Parcelamento em até 6x</li>
+            <li>✅ Atendimento rápido pelo WhatsApp</li>
+        </ul>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <h2>O que dizem nossos clientes</h2>
+        <blockquote>
+            “Simplesmente amei! Meu cabelo ficou incrível com os produtos da Bruno4dStore.” – <strong>Juliana R.</strong>
+        </blockquote>
+    </section>
+
+</main>
+{% endblock %}
