@@ -110,3 +110,117 @@ footer {
     margin-top: 40px;
     color: #aaa;
 }
+
+/* Banner principal */
+.banner {
+    background: linear-gradient(135deg, #a259ff, #8731ff);
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.banner-conteudo h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner-conteudo p {
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-banner {
+    background-color: #ffa500;
+    color: #1e1e1e;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-banner:hover {
+    background-color: #ff8c00;
+}
+
+/* Categorias */
+.categorias {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.categorias h2 {
+    color: #a259ff;
+    margin-bottom: 20px;
+}
+
+.grade-categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.categoria {
+    background-color: #2c2c2c;
+    color: #ffa500;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+/* Benefícios */
+.beneficios {
+    margin: 40px 0;
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.beneficios h2 {
+    text-align: center;
+    color: #a259ff;
+    margin-bottom: 20px;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.beneficios li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Depoimentos */
+.depoimentos {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #2c2c2c;
+    border-left: 5px solid #a259ff;
+    border-radius: 10px;
+}
+
+.depoimentos h2 {
+    color: #a259ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.depoimentos blockquote {
+    font-style: italic;
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 1.1rem;
+}
