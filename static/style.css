@@ -11,6 +11,9 @@ body {
     color: #f5f5f5;
 }
 
+.menu_nav {
+    
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -34,10 +37,12 @@ header h1 {
 
 nav ul {
     display: flex;
-    justify-content: space-around; /* ou use space-between */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     list-style: none;
-    margin-top: 10px;
-    padding: 0 10px; /* opcional, para dar respiro nas bordas */
+    margin-top: 1vh;
+    padding: 0 2%;
 }
 
 nav a {
@@ -203,24 +208,54 @@ footer {
     font-size: 1.1rem;
 }
 
-/* Depoimentos */
-.depoimentos {
-    margin: 40px 0;
-    padding: 30px;
-    background-color: #2c2c2c;
-    border-left: 5px solid #a259ff;
-    border-radius: 10px;
+.menu_nav ul li a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    color: #ffa500;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.depoimentos h2 {
-    color: #a259ff;
-    margin-bottom: 20px;
-    text-align: center;
+.menu_nav ul li a:hover {
+    transform: scale(1.1); /* Aplica o efeito de zoom */
+    background-color: #1e1e1e;
+    color: #ffa500;
 }
 
-.depoimentos blockquote {
-    font-style: italic;
-    color: #f5f5f5;
-    text-align: center;
-    font-size: 1.1rem;
+.menu_nav ul li a:active,
+.menu_nav ul li a:focus {
+    background-color: #8731ff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .menu_nav ul li a {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu_nav ul li a {
+        padding: 0.8em;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
