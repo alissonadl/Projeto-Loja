@@ -25,3 +25,8 @@ def cadastro():
 @app.route("/login")
 def login():
     return render_template("login.html")
+
+@app.route("/termos")
+def termos():
+    return render_template("termos_de_uso.html")
+
